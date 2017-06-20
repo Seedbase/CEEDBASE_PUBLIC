@@ -281,7 +281,7 @@ var SEMICOLON = SEMICOLON || {};
 			if( !elementScrollEasing ) { elementScrollEasing = 'easeOutQuad'; }
 
 			$goToTopEl.click(function() {
-				$('body,html').stop(true).animate({
+				$('body,testHtml').stop(true).animate({
 					'scrollTop': 0
 				}, Number( elementScrollSpeed ), elementScrollEasing );
 				return false;
@@ -642,7 +642,7 @@ var SEMICOLON = SEMICOLON || {};
 				loaderTimeOut = $body.attr('data-loader-timeout'),
 				loaderStyle = $body.attr('data-loader'),
 				loaderColor = $body.attr('data-loader-color'),
-				loaderStyleHtml = $body.attr('data-loader-html'),
+				loaderStyleHtml = $body.attr('data-loader-testHtml'),
 				loaderBgStyle = '',
 				loaderBorderStyle = '',
 				loaderBgClass = '',
@@ -1314,7 +1314,7 @@ var SEMICOLON = SEMICOLON || {};
 							$body.toggleClass('primary-menu-open', false);
 						}
 
-						$('html,body').stop(true).animate({
+						$('testHtml,body').stop(true).animate({
 							'scrollTop': $( divScrollToAnchor ).offset().top - Number(divScrollOffset)
 						}, Number(divScrollSpeed), divScrollEasing);
 
@@ -2032,7 +2032,7 @@ var SEMICOLON = SEMICOLON || {};
 							SEMICOLON.initialize.lightbox();
 							SEMICOLON.initialize.resizeVideos();
 							SEMICOLON.widget.masonryThumbs();
-							$('html,body').stop(true).animate({
+							$('testHtml,body').stop(true).animate({
 								'scrollTop': $portfolioDetails.offset().top - topOffsetScroll
 							}, 900, 'easeOutQuad');
 						},500);
@@ -2048,7 +2048,7 @@ var SEMICOLON = SEMICOLON || {};
 					SEMICOLON.initialize.lightbox();
 					SEMICOLON.initialize.resizeVideos();
 					SEMICOLON.widget.masonryThumbs();
-					$('html,body').stop(true).animate({
+					$('testHtml,body').stop(true).animate({
 						'scrollTop': $portfolioDetails.offset().top - topOffsetScroll
 					}, 900, 'easeOutQuad');
 				},500);
@@ -2529,7 +2529,7 @@ var SEMICOLON = SEMICOLON || {};
 							element.find('.acctitle').removeClass('acctitlec').next().slideUp("normal");
 							var clickTarget = $(this);
 							$(this).toggleClass('acctitlec').next().slideDown("normal", function(){
-								$('html,body').stop(true).animate({
+								$('testHtml,body').stop(true).animate({
 									'scrollTop': clickTarget.offset().top - ( SEMICOLON.initialize.topScrollOffset() - 40 )
 								}, 800, 'easeOutQuad' );
 							});
@@ -3156,7 +3156,7 @@ var SEMICOLON = SEMICOLON || {};
 					if( !divScrollOffset ) { divScrollOffset = SEMICOLON.initialize.topScrollOffset(); }
 					if( !divScrollEasing ) { divScrollEasing = 'easeOutQuad'; }
 
-				$('html,body').stop(true).animate({
+				$('testHtml,body').stop(true).animate({
 					'scrollTop': $( divScrollToAnchor ).offset().top - Number(divScrollOffset)
 				}, Number(divScrollSpeed), divScrollEasing, function(){
 					if( divScrollHighlight ) {
