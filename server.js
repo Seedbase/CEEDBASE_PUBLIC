@@ -41,5 +41,5 @@ app.get('/terms-of-use', function (req, res) {
 });
 
 app.listen(3000, function () {
-    console.log('App listeniing on port 3000!')
+    console.log('App listeniing on port 3000. test')
 });
