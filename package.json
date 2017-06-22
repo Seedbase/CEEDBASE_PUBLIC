@@ -1,0 +1,20 @@
+{
+  "name": "ceedbase",
+  "version": "1.0.0",
+  "description": "delta phase",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seedbase/CEEDBASE.git"
+  },
+  "author": "Dorcas",
+  "bugs": {
+    "url": "https://github.com/Seedbase/CEEDBASE/issues"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}
